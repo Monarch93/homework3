@@ -5,18 +5,18 @@ import java.util.Arrays;
 public class homework3 {
 
     public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
-        task4();
-        task5();
-        task6();
-        task7();
+        integerArray();
+        emptyIntegerArray();
+        arrayLoop();
+        arraySquare();
+        lenInitialValue();
+        minMaxArray();
+        oneDimArray();
 
 
     }
 
-    public static int[] task1() {
+    public static int[] integerArray() {
         int[] a = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         for (int i = 0; i < a.length; i++) {
             a[i] = (a[i] == 0) ? 1 : 0;
@@ -26,7 +26,7 @@ public class homework3 {
         return a;
     }
 
-    public static void task2() {
+    public static void emptyIntegerArray() {
         int[] a = new int[100];
         for (int i = 0; i < a.length; i++) {
             a[i] = i + 1;
@@ -35,7 +35,7 @@ public class homework3 {
         System.out.println();
     }
 
-    public static void task3() {
+    public static void arrayLoop() {
         int[] a = new int[]{1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int i = 0; i < a.length; i++) {
             if (a[i] < 6) {
@@ -46,7 +46,7 @@ public class homework3 {
         System.out.println();
     }
 
-    public static void task4() {
+    public static void arraySquare() {
         int[][] a = {
                 {0, 0, 0},
                 {0, 0, 0},
@@ -69,7 +69,7 @@ public class homework3 {
         }
     }
 
-    public static void task5(int len, int initialValue){
+    public static void lenInitialValue(int len, int initialValue){
         int[] a = new int[len];
         for (int i = 0; i < len; i++) {
             a[i] = initialValue;
@@ -78,7 +78,7 @@ public class homework3 {
 
     }
 
-    public static void task6() {
+    public static void minMaxArray() {
         int[] a = new int[]{1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         int max = a[0];
         int min = a[0];
@@ -94,7 +94,7 @@ public class homework3 {
         System.out.println(min);
     }
 
-    public static boolean task7() {
+    public static boolean oneDimArray() {
         int[] a = new int[]{1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         int right = 0;
         int left = 0;
